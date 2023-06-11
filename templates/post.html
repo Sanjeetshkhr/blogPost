@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="{% static 'assets/img/favicon.ico' %}">
-<title>Mediumish - A Medium style template by WowThemes.net</title>
+<title>BlogPost - A personal blogging destination</title>
 <!-- Bootstrap core CSS -->
 <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
 <!-- Fonts -->
@@ -34,13 +34,13 @@
 		<!-- Begin Menu -->
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item active">
-			<a class="nav-link" href="index.html">Stories <span class="sr-only">(current)</span></a>
+			<a class="nav-link" href="/">Stories <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="post.html">Post</a>
+			<a class="nav-link" href="/">Post</a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="author.html">Author</a>
+			<a class="nav-link" href="#">Author</a>
 			</li>
 		</ul>
 		<!-- End Menu -->
@@ -101,7 +101,7 @@
 			<div class="mainheading">
 
 				<!-- Begin Top Meta -->
-				<div class="row post-top-meta">
+				<!-- <div class="row post-top-meta">
 					<div class="col-md-2">
 						<a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
 					</div>
@@ -110,7 +110,7 @@
 						<span class="author-description">Founder of WowThemes.net and creator of <b>"Mediumish"</b> theme that you're currently previewing. Developing professional premium themes, templates, plugins, scripts since 2012.</span>
 						<span class="post-date">{{post.created_At}}</span><span class="dot"></span><span class="post-read">{{post.post_read}} min read</span>
 					</div>
-				</div>
+				</div> -->
 				<!-- End Top Menta -->
 
 				<h1 class="posttitle">{{post.title}}</h1>
