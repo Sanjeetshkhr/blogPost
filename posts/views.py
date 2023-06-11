@@ -11,4 +11,5 @@ def post(request, pk):
     return render(request, 'post.html', {'post': post, 'posts': posts})
 
 def author(request):
-    return render(request, 'author.html')
+    posts = Post.objects.all()
+    return render(request, 'author.html', {'posts': posts})
