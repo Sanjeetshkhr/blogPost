@@ -13,3 +13,15 @@ def post(request, pk):
 def author(request):
     posts = Post.objects.all()
     return render(request, 'author.html', {'posts': posts})
+
+def search(request):
+    if request.method == "GET":
+        query = request.GET.get('query')
+
+        if query == '':
+            query = 'None'
+
+        results = Post.objects.filter(title__icontains=query)
+        count = results.count()
+
+    return render(request, 'search.html', {'query': query, 'results': results, "count": count})
